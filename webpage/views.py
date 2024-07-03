@@ -2,11 +2,11 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def indexPage(request):
-    return HttpResponse("Hello world")
+    return render(request, 'index.html')
 
 def aboutUs(request):
-    return HttpResponse("เกี่ยวกับฉัน")
+    return render(request, 'about.html')
 
 
 def contactUs(request):
-    return HttpResponse("ติดต่อ")
+    return render(request, 'contact.html')
