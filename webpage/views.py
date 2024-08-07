@@ -12,4 +12,8 @@ def contactUs(request):
     return render(request, 'contact.html')
 
 def forPage(request):
-    return render(request, 'for_test.html')
+    context = {}
+    lt = list(range(0, 100))
+    context["list"] = lt
+    # ทำวนหน้าเว็บ
+    return render(request, 'for_test.html', context)
