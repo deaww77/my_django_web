@@ -6,5 +6,6 @@ urlpatterns = [
     path("contact/", views.contactUs, name="contactUs"),
     path("for/", views.forPage, name="for_page"),
     path("card/", views.card, name="card"),
-    path("card_color/", views.card_color, name="card_color")
+    path("card_color/", views.card_color, name="card_color"),
+    path("form/", views.form, name="form")
 ]
